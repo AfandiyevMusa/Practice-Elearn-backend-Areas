@@ -1,0 +1,63 @@
+﻿@model List<CourseVM>
+@{
+    ViewData["Title"] = "Dashboard Index";
+}
+
+<style>
+    .slider-status {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+    }
+
+    .status-true {
+        background-color: green;
+    }
+
+    .status-false {
+        background-color: red;
+    }
+</style>
+
+<div class="container">
+    <h1 class="text-center my-5">Why Choose Us?</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">Price</th>
+                <th scope="col">Author</th>
+                <th scope="col">Created Date</th>
+                <th scope="col">Status</th>
+                <th scope="col">Options</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var course in Model)
+            {
+                <tr>
+                    <td>
+                        <img src="images/@course.courseImages.FirstOrDefault().Image" style="width:75px; height:75px; border-radius: 0" />
+                    </td>
+                    <td>@course.Title</td>
+                    <td>@course.Description</td>
+                    <td>@course.Price</td>
+                    <td>@course.Author</td>
+                    <td>@course.CreatedDate</td>
+                    <td>
+                        <div class="slider-status @(course.Status ? "status-true" : "status-false") ">
+
+                        </div>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" asp-action="Detail" asp-route-id="@course.Id">Details</button>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,63 @@
+﻿<Properties StartupConfiguration="{FB2CE668-F30C-47A4-AAC8-B93AC2DE0444}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Elearn/Areas/Admin/Views/Course/Index.cshtml">
+    <Files>
+      <File FileName="Elearn/Areas/Admin/Controllers/NewsController.cs" Line="59" Column="10" />
+      <File FileName="Elearn/Areas/Admin/ViewModels/News/NewsVM.cs" Line="9" Column="9" />
+      <File FileName="Elearn/Areas/Admin/ViewModels/News/NewsDetailVM.cs" Line="11" Column="48" />
+      <File FileName="Elearn/Models/News.cs" Line="10" Column="9" />
+      <File FileName="Elearn/Areas/Admin/Views/News/Index.cshtml" Line="16" Column="1" />
+      <File FileName="Elearn/Areas/Admin/Views/Shared/_Layout.cshtml" Line="322" Column="74" />
+      <File FileName="Elearn/Areas/Admin/Views/_ViewImports.cshtml" Line="6" Column="44" />
+      <File FileName="Elearn/Areas/Admin/ViewModels/Course/CourseDetailVM.cs" Line="15" Column="48" />
+      <File FileName="Elearn/Areas/Admin/ViewModels/Course/CourseVM.cs" Line="6" Column="15" />
+      <File FileName="Elearn/Areas/Admin/Controllers/CourseController.cs" Line="61" Column="39" />
+      <File FileName="Elearn/Areas/Admin/Views/Course/Index.cshtml" Line="42" Column="136" />
+      <File FileName="Elearn/Models/Course.cs" Line="10" Column="18" />
+      <File FileName="Elearn/Data/AppDbContext.cs" Line="13" Column="37" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Elearn" expanded="True">
+            <Node name="Elearn" expanded="True">
+              <Node name="Areas" expanded="True">
+                <Node name="Admin" expanded="True">
+                  <Node name="Controllers" expanded="True" />
+                  <Node name="Models" expanded="True" />
+                  <Node name="ViewModels" expanded="True">
+                    <Node name="Choose" expanded="True" />
+                    <Node name="Course" expanded="True" />
+                    <Node name="CourseAuthor" expanded="True" />
+                    <Node name="Event" expanded="True" />
+                    <Node name="News" expanded="True" />
+                    <Node name="NewsAuthors" expanded="True" />
+                  </Node>
+                  <Node name="Views" expanded="True">
+                    <Node name="Choose" expanded="True" />
+                    <Node name="Course" expanded="True">
+                      <Node name="Index.cshtml" selected="True" />
+                    </Node>
+                    <Node name="Dashboard" expanded="True" />
+                    <Node name="Event" expanded="True" />
+                    <Node name="News" expanded="True" />
+                    <Node name="NewsAuthors" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="wwwroot" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Elearn PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

@@ -1,0 +1,39 @@
+﻿@model ChooseDetailVM
+@*<style>
+        .project-info-box {
+            margin: 15px 0;
+            background-color: #fff;
+            padding: 30px 40px;
+            border-radius: 5px;
+        }
+
+       .project-info-box p {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #d5dadb;
+       }
+
+       .project-info-box p:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+       }
+
+    </style>
+
+    <div class="container project-info-box">
+        <p><b>Title:</b> @Model.Title</p>
+        <p><b>Details:</b> @Model.Details</p>
+        <p><b>Status:</b> @Model.Status</p>
+        <p><b>Created Date:</b> @Model.CreatedDate</p>
+    </div>*@
+
+<div class="container my-5">
+    <h1 class="text-center">Choose Info</h1>
+    <div class="choose-detail">
+        <h3>Title: @Model.Title</h3>
+        <h3>Details: @Model.Details</h3>
+        <h3>Status: @Model.Status</h3>
+        <h3>Created Date: @Model.CreatedDate</h3>
+    </div>
+</div>

@@ -1,0 +1,57 @@
+﻿@model List<NewsVM>
+@{
+    ViewData["Title"] = "Dashboard Index";
+}
+
+<style>
+    .slider-status {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+    }
+
+    .status-true {
+        background-color: green;
+    }
+
+    .status-false {
+        background-color: red;
+    }
+</style>
+
+<div class="container">
+    <h1 class="text-center my-5">Why Choose Us?</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Title</th>
+                <th scope="col">Created Date</th>
+                <th scope="col">Status</th>
+                <th scope="col">Options</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var news in Model)
+            {
+                <tr>
+                    <td>
+                        <img src="images/@news.NewsImages.FirstOrDefault().Image" style="width:75px; height:75px"/>
+                    </td>
+                    <td>@news.Title</td>
+                    <td>@news.CreatedDate</td>
+                    <td>
+                        <div class="slider-status @(news.Status ? "status-true" : "status-false") ">
+
+                        </div>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" asp-action="Detail" asp-route-id="@news.Id">Details</button>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
